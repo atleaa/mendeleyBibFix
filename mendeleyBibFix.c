@@ -256,7 +256,8 @@ int main(int argc, char *argv[])
 		curBibInd = 1; // We know first character is '@'
 		
 		// Check URL exception types
-		bUrlException = false;
+//		bUrlException = false;
+		bUrlException = true; // added exception for all types to include URL
 		while(curBibEntry[curBibInd] != '{'
 			&& curBibInd < BIB_TYPE_MAX)
 		{
